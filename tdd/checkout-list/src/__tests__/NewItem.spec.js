@@ -25,6 +25,9 @@ describe('<NewItem />', () => {
   });
 
   it('calls the send handler', () => {
-    expect(sendHandler).toHaveBeenCalledWith('Test item');
+    expect(sendHandler).toHaveBeenCalledWith({
+      text: 'Test item',
+      isChecked: false,
+    });
   });
 });

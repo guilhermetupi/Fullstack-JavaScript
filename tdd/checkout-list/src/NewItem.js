@@ -8,7 +8,7 @@ const NewItem = ({ onSend }) => {
   };
 
   const handleSend = () => {
-    onSend(inputText);
+    onSend({ text: inputText, isChecked: false });
     setInputText('');
   };
 
